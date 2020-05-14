@@ -6,24 +6,6 @@
   flex-wrap: wrap;
   justify-content: center;
   font-family: "Michroma", sans-serif;
-
-  .algoTitle {
-    // TRY TO MAKE THIS METAL REFLECTIVE
-    font-family: "Faster One", cursive;
-    font-size: 9vw;
-    font-weight: lighter;
-    margin-top: none;
-    background: -webkit-linear-gradient(
-      $eightiesYellow 30%,
-      $eightiesOrange,
-      $eightiesPink 70%,
-      $eightiesPurple 90%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    user-select: none;
-  }
 }
 
 .navBarContainer {
@@ -40,8 +22,9 @@
     display: flex;
 
     #problems {
-      // border: 1px solid $lightblueTron;
-      display: flex;
+      border: 1px solid $lightblueTron;
+      height: 70%;
+      display: inline-flex;
       list-style: none;
       padding: 0;
       margin: 0;

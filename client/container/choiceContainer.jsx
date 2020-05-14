@@ -6,10 +6,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const Choice = () => {
   return (
     <div>
+      <div className="mainContainer">
+        <div className="mainTitle"> CODERACER</div>
       <Router>
         <div className="choice">
           <div className="loadscreen">
-            <h1 className="crtSpecial welcome">Choose between ....</h1>
             <Link to="/algocontainer">
               <button className="crtSpecial algo">ALGORITHM</button>
             </Link>
@@ -23,11 +24,11 @@ const Choice = () => {
             <MainContainer />
           </Route>
           <Route path="/algocontainer">
-            <p>123</p>
             <AlgoContainer />
           </Route>
         </Switch>
       </Router>
+    </div>
     </div>
   );
 };

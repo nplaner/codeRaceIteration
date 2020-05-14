@@ -19,7 +19,8 @@ const AlgoInput = (props) => {
     setValue('');
   };
   return (
-    <form onSubmit={handleSubmit} id="searchForm">
+    <div className="inputContainer">
+      <form onSubmit={handleSubmit} id="searchForm">
       <textarea
         placeholder="Enter your garbage code here..."
         onChange={(e) => setValue(e.target.value)}
@@ -27,6 +28,8 @@ const AlgoInput = (props) => {
       />
       <input value="submit your shit" type="submit" />
     </form>
+    </div>
+    
   );
 };
 

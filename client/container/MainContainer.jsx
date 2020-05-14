@@ -82,13 +82,12 @@ class MainContainer extends Component {
   render() {
     return (
       <div className="mainContainer">
-        <div className="mainTitle"> CODERACER</div>
-
         <NavBar
           isRaceStarted={this.state.hasRace}
           categories={this.state.categories}
           handleClick={this.handleClick}
         />
+
 
         <CodeSnippet
           content={this.state.content}
